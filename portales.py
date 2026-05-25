@@ -6,27 +6,27 @@ while True:
 
     opc = str(input("Seleccione una opción: "))
 
-         if opc == "1":
-            x = float(input("Ingrese la coordenada X del portal en el Nether: "))
-            z = float(input("Ingrese la coordenada Z del portal en el Nether: "))
+    if opc == "1":
+        x = float(input("Ingrese la coordenada X del portal en el Nether: "))
+        z = float(input("Ingrese la coordenada Z del portal en el Nether: "))
 
-            x_overworld = x * 8
-            z_overworld = z * 8
+        x_overworld = x * 8
+        z_overworld = z * 8
 
-            print(f"Las coordenadas del portal en el Overworld son: X: {x_overworld}, Z: {z_overworld}")
+        print(f"Las coordenadas del portal en el Overworld son: X: {x_overworld}, Z: {z_overworld}")
 
-        elif opc == "2":
-            x = float(input("Ingrese la coordenada X del portal en el Overworld: "))
-            z = float(input("Ingrese la coordenada Z del portal en el Overworld: "))
+    elif opc == "2":
+        x = float(input("Ingrese la coordenada X del portal en el Overworld: "))
+        z = float(input("Ingrese la coordenada Z del portal en el Overworld: "))
 
-            x_nether = x / 8
-            z_nether = z / 8
+        x_nether = x / 8
+        z_nether = z / 8
 
-            print(f"Las coordenadas del portal en el Nether son: X: {x_nether}, Z: {z_nether}")
+        print(f"Las coordenadas del portal en el Nether son: X: {x_nether}, Z: {z_nether}")
 
-        elif opc == "3":
-            print("Saliendo del programa...")
-            break
+    elif opc == "3":
+        print("Saliendo del programa")
+        break
 
-        else:
-            print("Opción no válida. Por favor, seleccione una opción valida.")
+    else:
+        print("Opción no válida. Por favor, seleccione una opción valida.")
